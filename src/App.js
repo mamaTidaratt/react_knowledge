@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Knowledge_useState1 from './components/Knowledge_useState1';
 
-function App() {
+export default function App () {
+  // const [count, setCount] = useState(0);
+  // const [title,setTitle] = useState("title")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div style={{textAlign:"center"}}>{count} <br />
+    // <button onClick={()=>setCount(count+1)}> Add</button>
+    //  <h2> Title : {title}</h2>
+    // </div>
+     <div style={{textAlign:"center",margintop:"10px"}}>
+<Knowledge_useState1></Knowledge_useState1>
     </div>
-  );
-}
 
-export default App;
+    )
+};
